@@ -23,8 +23,8 @@ class SpotifyDataExtractor(object):
 
     def __init__(self):
 
-        self.client_id = '503b4341f09e4daeaa91a795be8d8216'
-        self.client_secret = '7a8326c98b364a27a3fd5e0632816806'
+        self.client_id = ''
+        self.client_secret = ''
         client_credentials = SpotifyClientCredentials(client_id = self.client_id, client_secret = self.client_secret)
         self.spotify = spotipy.Spotify(client_credentials_manager = client_credentials)
         self.input_folder_path = ''
